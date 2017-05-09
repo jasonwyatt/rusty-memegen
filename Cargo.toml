@@ -1,0 +1,20 @@
+[package]
+name = "slack-memegen"
+version = "0.1.0"
+authors = ["Jason Feinstein <jason.feinstein@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+iron = "0.5.1"
+router = "0.5.1"
+staticfile = "0.4.0"
+mount = "0.3.0"
+askama = "0.3"
+hyper = "0.10"
+mime = "0.2"
+time = "0.1.37"
+log = "0.3"
+urlencoding = "1.0"
+
+[build-dependencies]
+askama = "0.3"
