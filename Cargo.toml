@@ -1,5 +1,5 @@
 [package]
-name = "slack-memegen"
+name = "rusty-memegen"
 version = "0.1.0"
 authors = ["Jason Feinstein <jason.feinstein@gmail.com>"]
 build = "build.rs"
