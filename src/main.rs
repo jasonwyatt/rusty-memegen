@@ -39,8 +39,7 @@ fn favicon(_: &mut Request) -> IronResult<Response> {
 
 fn generate(req: &mut Request) -> IronResult<Response> {
     let router = req.extensions.get::<Router>().unwrap();
-    let mut memename: String = router.find("memename").unwrap().to_string();
-    memename.push_str(".jpg");
+    let memename = format!("{}.jpg", router.find("memename").unwrap());
 
     let first_line = urlencoding::decode(router.find("first_line").unwrap()).unwrap();
     let second_line = urlencoding::decode(router.find("second_line").unwrap()).unwrap();
